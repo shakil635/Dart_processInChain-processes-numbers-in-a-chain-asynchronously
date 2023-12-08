@@ -5,16 +5,10 @@ library;
 
 export 'src/dart_future_chain_processing_base.dart';
 
-// TODO: Export any libraries intended for clients of this package.
-
 Future<List<int>> processInChain(List<int> input) async {
   await Future.delayed(Duration(seconds: 1));
   return input.map((number) => number * 2).toList();
 }
-
-
-
-
 
 /*
 Practice Question 1: Future Chain Processing
